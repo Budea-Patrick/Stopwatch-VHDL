@@ -1,0 +1,244 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Mar  1 20:13:06 2022
+# Process ID: 11632
+# Current directory: E:/Digilent/Course 2/Chrono/Chrono.runs/synth_1
+# Command line: vivado.exe -log TopCrono.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source TopCrono.tcl
+# Log file: E:/Digilent/Course 2/Chrono/Chrono.runs/synth_1/TopCrono.vds
+# Journal file: E:/Digilent/Course 2/Chrono/Chrono.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source TopCrono.tcl -notrace
+Command: synth_design -top TopCrono -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 16252
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1024.910 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'TopCrono' [E:/Digilent/Course 2/Chrono/Chrono.srcs/sources_1/new/TopCrono.vhd:50]
+INFO: [Synth 8-3491] module 'ctrl7seg' declared at 'E:/Digilent/Course 2/Chrono/Chrono.srcs/sources_1/new/ctrl7seg.vhd:35' bound to instance 'instctrl7seg' of component 'ctrl7seg' [E:/Digilent/Course 2/Chrono/Chrono.srcs/sources_1/new/TopCrono.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'ctrl7seg' [E:/Digilent/Course 2/Chrono/Chrono.srcs/sources_1/new/ctrl7seg.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'ctrl7seg' (1#1) [E:/Digilent/Course 2/Chrono/Chrono.srcs/sources_1/new/ctrl7seg.vhd:43]
+INFO: [Synth 8-3491] module 'counterBCD' declared at 'E:/Digilent/Course 2/Chrono/Chrono.srcs/sources_1/new/counterBCD.vhd:31' bound to instance 'instBcd' of component 'counterBcd' [E:/Digilent/Course 2/Chrono/Chrono.srcs/sources_1/new/TopCrono.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'counterBCD' [E:/Digilent/Course 2/Chrono/Chrono.srcs/sources_1/new/counterBCD.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'counterBCD' (2#1) [E:/Digilent/Course 2/Chrono/Chrono.srcs/sources_1/new/counterBCD.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'TopCrono' (3#1) [E:/Digilent/Course 2/Chrono/Chrono.srcs/sources_1/new/TopCrono.vhd:50]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1024.910 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1024.910 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1024.910 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1024.910 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/Digilent/Course 2/Chrono/Chrono.srcs/constrs_1/imports/Digilent/Basys3_master.xdc]
+Finished Parsing XDC File [E:/Digilent/Course 2/Chrono/Chrono.srcs/constrs_1/imports/Digilent/Basys3_master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [E:/Digilent/Course 2/Chrono/Chrono.srcs/constrs_1/imports/Digilent/Basys3_master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/TopCrono_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/TopCrono_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1049.180 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1049.180 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1049.180 ; gain = 24.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1049.180 ; gain = 24.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1049.180 ; gain = 24.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1049.180 ; gain = 24.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   20 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 4     
++---Registers : 
+	               20 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input   20 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 3     
+	   5 Input   16 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 2     
+	   2 Input    4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1049.180 ; gain = 24.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1049.180 ; gain = 24.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1049.180 ; gain = 24.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5966] Removing register instance (\instBcd/data_reg[15] ) from module (TopCrono) as it has self-loop and (\instBcd/cntBCD_reg[15] ) is actual driver [E:/Digilent/Course 2/Chrono/Chrono.srcs/sources_1/new/counterBCD.vhd:58]
+INFO: [Synth 8-5966] Removing register instance (\instBcd/data_reg[14] ) from module (TopCrono) as it has self-loop and (\instBcd/cntBCD_reg[14] ) is actual driver [E:/Digilent/Course 2/Chrono/Chrono.srcs/sources_1/new/counterBCD.vhd:58]
+INFO: [Synth 8-5966] Removing register instance (\instBcd/data_reg[13] ) from module (TopCrono) as it has self-loop and (\instBcd/cntBCD_reg[13] ) is actual driver [E:/Digilent/Course 2/Chrono/Chrono.srcs/sources_1/new/counterBCD.vhd:58]
+INFO: [Synth 8-5966] Removing register instance (\instBcd/data_reg[12] ) from module (TopCrono) as it has self-loop and (\instBcd/cntBCD_reg[12] ) is actual driver [E:/Digilent/Course 2/Chrono/Chrono.srcs/sources_1/new/counterBCD.vhd:58]
+INFO: [Synth 8-5966] Removing register instance (\instBcd/data_reg[11] ) from module (TopCrono) as it has self-loop and (\instBcd/cntBCD_reg[11] ) is actual driver [E:/Digilent/Course 2/Chrono/Chrono.srcs/sources_1/new/counterBCD.vhd:58]
+INFO: [Synth 8-5966] Removing register instance (\instBcd/data_reg[10] ) from module (TopCrono) as it has self-loop and (\instBcd/cntBCD_reg[10] ) is actual driver [E:/Digilent/Course 2/Chrono/Chrono.srcs/sources_1/new/counterBCD.vhd:58]
+INFO: [Synth 8-5966] Removing register instance (\instBcd/data_reg[9] ) from module (TopCrono) as it has self-loop and (\instBcd/cntBCD_reg[9] ) is actual driver [E:/Digilent/Course 2/Chrono/Chrono.srcs/sources_1/new/counterBCD.vhd:58]
+INFO: [Synth 8-5966] Removing register instance (\instBcd/data_reg[8] ) from module (TopCrono) as it has self-loop and (\instBcd/cntBCD_reg[8] ) is actual driver [E:/Digilent/Course 2/Chrono/Chrono.srcs/sources_1/new/counterBCD.vhd:58]
+INFO: [Synth 8-5966] Removing register instance (\instBcd/data_reg[7] ) from module (TopCrono) as it has self-loop and (\instBcd/cntBCD_reg[7] ) is actual driver [E:/Digilent/Course 2/Chrono/Chrono.srcs/sources_1/new/counterBCD.vhd:58]
+INFO: [Synth 8-5966] Removing register instance (\instBcd/data_reg[6] ) from module (TopCrono) as it has self-loop and (\instBcd/cntBCD_reg[6] ) is actual driver [E:/Digilent/Course 2/Chrono/Chrono.srcs/sources_1/new/counterBCD.vhd:58]
+INFO: [Synth 8-5966] Removing register instance (\instBcd/data_reg[5] ) from module (TopCrono) as it has self-loop and (\instBcd/cntBCD_reg[5] ) is actual driver [E:/Digilent/Course 2/Chrono/Chrono.srcs/sources_1/new/counterBCD.vhd:58]
+INFO: [Synth 8-5966] Removing register instance (\instBcd/data_reg[4] ) from module (TopCrono) as it has self-loop and (\instBcd/cntBCD_reg[4] ) is actual driver [E:/Digilent/Course 2/Chrono/Chrono.srcs/sources_1/new/counterBCD.vhd:58]
+INFO: [Synth 8-5966] Removing register instance (\instBcd/data_reg[3] ) from module (TopCrono) as it has self-loop and (\instBcd/cntBCD_reg[3] ) is actual driver [E:/Digilent/Course 2/Chrono/Chrono.srcs/sources_1/new/counterBCD.vhd:58]
+INFO: [Synth 8-5966] Removing register instance (\instBcd/data_reg[2] ) from module (TopCrono) as it has self-loop and (\instBcd/cntBCD_reg[2] ) is actual driver [E:/Digilent/Course 2/Chrono/Chrono.srcs/sources_1/new/counterBCD.vhd:58]
+INFO: [Synth 8-5966] Removing register instance (\instBcd/data_reg[1] ) from module (TopCrono) as it has self-loop and (\instBcd/cntBCD_reg[1] ) is actual driver [E:/Digilent/Course 2/Chrono/Chrono.srcs/sources_1/new/counterBCD.vhd:58]
+INFO: [Synth 8-5966] Removing register instance (\instBcd/data_reg[0] ) from module (TopCrono) as it has self-loop and (\instBcd/cntBCD_reg[0] ) is actual driver [E:/Digilent/Course 2/Chrono/Chrono.srcs/sources_1/new/counterBCD.vhd:58]
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1049.180 ; gain = 24.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1049.180 ; gain = 24.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1049.180 ; gain = 24.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1049.180 ; gain = 24.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1049.180 ; gain = 24.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1049.180 ; gain = 24.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1049.180 ; gain = 24.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    10|
+|3     |LUT1   |     6|
+|4     |LUT2   |     4|
+|5     |LUT3   |     4|
+|6     |LUT4   |    19|
+|7     |LUT5   |    25|
+|8     |LUT6   |     7|
+|9     |FDCE   |    36|
+|10    |FDRE   |    21|
+|11    |IBUF   |     3|
+|12    |OBUF   |    28|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 1049.180 ; gain = 24.270
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1049.180 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1049.180 ; gain = 24.270
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1056.809 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 10 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1056.809 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+39 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 1056.809 ; gain = 31.898
+INFO: [Common 17-1381] The checkpoint 'E:/Digilent/Course 2/Chrono/Chrono.runs/synth_1/TopCrono.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file TopCrono_utilization_synth.rpt -pb TopCrono_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Mar  1 20:13:40 2022...

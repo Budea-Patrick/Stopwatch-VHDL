@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Tue Mar  1 20:13:47 2022
+# Process ID: 17248
+# Current directory: E:/Digilent/Course 2/Chrono/Chrono.runs/impl_1
+# Command line: vivado.exe -log TopCrono.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source TopCrono.tcl -notrace
+# Log file: E:/Digilent/Course 2/Chrono/Chrono.runs/impl_1/TopCrono.vdi
+# Journal file: E:/Digilent/Course 2/Chrono/Chrono.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source TopCrono.tcl -notrace
